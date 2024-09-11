@@ -132,10 +132,6 @@ body {
         max-width: 100%;
         margin-bottom: 20px;
     }
-
-    .card-body {
-        margin-bottom: 30px;
-    }
 }
 
 
@@ -301,3 +297,15 @@ body {
     padding: 8px;
     width: 100%; 
 }
+
+  /* General card styling */
+  .card {
+    padding-bottom: 20px; /* Default padding for all screens */
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .card {
+      padding-bottom: 30px; /* Extra padding for mobile devices */
+    }
+  }
