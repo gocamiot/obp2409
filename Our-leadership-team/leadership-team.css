@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(245, 237, 237) !important;
+    font-family: 'Raleway' !important;
+}
+
+.container1 {
+    margin: 0 auto;
+    width: 100%;
+    background: rgb(245, 237, 237);
+}
+
+.company-info {
+    background-color: #013a51;
+    color: white;
+    text-align: center;
+}
+
+.headings {
+    color: #013a51;
+    text-decoration: underline #8fa63c;
+ }
+
+ h3 {
+    font-weight: bold;
+    color: #8fa63c !important;
+
+}
+
+.content-section {
+    background-color: #3b6c85;
+}
+
+.overview-title {
+    font-size: 3rem;
+}
+
+.info-card {
+    background-color: #013a51;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.799);
+    border-left: 4px solid white;
+}
+
+.info-card .card-title {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.info-card .card-text {
+    color: #e0e0e0;
+}
+
+.text-uppercase {
+    font-size: 0.9rem;
+}
+
+.text-muted {
+    color: #b0b0b0 !important;
+}
+
+h1, h4 {
+    color: #ffffff;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+/* hover effects */
+.hover-forward {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hover-forward:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-forward:not(:hover) {
+    transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+}
+
+.text-hover {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Line element */
+.text-hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8fa63c;
+    transform: translateX(-100%);
+    transition: transform 1.0s ease-out;
+}
+
+.text-hover:hover::before {
+    transform: translateX(0);
+}
+
+.text-hover:not(:hover)::before {
+    transition: transform 0.7s ease-in;
+}
+
+.pride-heading {
+    font-size: 1rem;
+    color: #083462;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-heading {
+    font-size: 2rem;
+    color: #8cad38;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heading-underline {
+    width: 40px;
+    height: 2px;
+    background-color: #083462;
+    margin: 0 auto 15px auto;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* executive css */
+
+.card-member {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.member-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3b6c85ee;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-member:hover .overlay {
+    opacity: 1;
+}
+
+.member-text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .card-member {
+        margin-bottom: 20px;
+    }
+}

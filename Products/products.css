@@ -1,0 +1,290 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h3 {
+    font-weight: bold;
+    color: #8fa63c !important;
+
+}
+
+.headings {
+    color: white;
+    text-decoration: underline #8fa63c;
+    font-size: 34px;
+    padding-top: 40px;
+ }
+
+
+.company-info {
+    background-color: #013a51;
+    color: white;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+body {
+    background-color: #3b6c85 !important;
+    font-family: 'Raleway' !important;
+}
+
+.container1 {
+    margin: 0 auto;
+    width: 100%;
+    background: rgb(245, 237, 237);
+}
+
+/* hover-effects css */
+.hover-forward {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hover-forward:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-forward:not(:hover) {
+    transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+}
+
+.text-hover {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Line element */
+.text-hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8fa63c;
+    transform: translateX(-100%);
+    transition: transform 1.0s ease-out;
+}
+
+.text-hover:hover::before {
+    transform: translateX(0);
+}
+
+.text-hover:not(:hover)::before {
+    transition: transform 0.7s ease-in;
+}
+
+
+
+
+
+/* General styles */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.col {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    border-bottom: transparent;
+}
+
+.card-body {
+    padding: 15px;
+    border: 4px solid white;
+    border-top: none;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Hide the card-text initially */
+.card-text {
+    display: none;
+}
+
+.more-text {
+    display: none;
+}
+
+/* Show the card-text when expanded */
+.card-text.expanded {
+    display: block;
+}
+
+.card-text.expanded + .more-text {
+    display: block;
+}
+
+.see-more {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+/* For larger screens, ensure all cards fill the space equally */
+@media (min-width: 768px) {
+    .card-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-row .col {
+        flex: 1 1 15%;
+        max-width: 15%; 
+        margin: 0 10px; 
+    }
+
+    .headings {
+        text-align: center;
+    }
+
+    .card-body {
+        flex-grow: 1;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+
+
+
+/* feedback section */
+.feedback-background {
+    background-color: #013a51;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.feedback-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(14, 15, 15, 0.977);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.feedback-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    font-size: 1em;
+    color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, border-bottom-width 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #8fa63c;
+    border-bottom-width: 2px; 
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+    transition: opacity 0.7s ease;
+}
+
+.btn-send {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.888);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-send:hover {
+    background-color: #5a8b2f;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 0.8em;
+    color: white;
+    text-align: right;
+}
+
+.form-group input[type="read"] {
+    border: none;
+    border-bottom: 1px solid transparent;
+    cursor: not-allowed; 
+    pointer-events: none; 
+    padding: 8px;
+    width: 100%; 
+}
