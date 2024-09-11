@@ -91,7 +91,7 @@ body {
 
 /* ceo section */
 .ceo-container {
-    background-image: url(/images/ceo-background1.png);
+    background-image: url(/obp2409/images/ceo-background1.png);
     background-size: cover;
     background-position: center;
     border: 6px solid #3b6c85;
@@ -107,7 +107,7 @@ body {
 
 /* intro section css */
 .intro-image {
-    background-image: url(/images/intro-image.png);
+    background-image: url(/obp2409/images/intro-image.png);
     background-position: center;
     background-size: cover;
     color: white;
@@ -152,7 +152,7 @@ body {
 
 /* sales section */
 .sales-background {
-    background-image: url(/images/sales-background.png);
+    background-image: url(/obp2409/images/sales-background.png);
     background-position: center;
     background-size: cover;
 }
@@ -568,19 +568,19 @@ margin: 0 auto;
 
 /* Apply background image to .icon-circle when hovering on the specific card */
 .card.icon1:hover .icon-circle {
-    background-image: url('/images/first-svg-img.png'); /* First card */
+    background-image: url('/obp2409/images/first-svg-img.png'); /* First card */
 }
 
 .card.icon2:hover .icon-circle {
-    background-image: url('/images/second-svg-img.png'); /* Second card */
+    background-image: url('/obp2409/images/second-svg-img.png'); /* Second card */
 }
 
 .card.icon3:hover .icon-circle {
-    background-image: url('/images/third-svg-img.png'); /* Third card */
+    background-image: url('/obp2409/images/third-svg-img.png'); /* Third card */
 }
 
 .card.icon4:hover .icon-circle {
-    background-image: url('/images/forth-svg-img.png'); /* Fourth card */
+    background-image: url('/obp2409/images/forth-svg-img.png'); /* Fourth card */
 }
 
 
