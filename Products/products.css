@@ -5,7 +5,12 @@ html {
 h3 {
     font-weight: bold;
     color: #8fa63c !important;
+    text-decoration: uppercase;
+    font-size: calc(5px + .6vw);
+}
 
+h6 {
+    font-size: 7.8px;
 }
 
 .headings {
@@ -154,6 +159,9 @@ body {
     margin-top: 10px;
 }
 
+.col {
+    padding-bottom: 26px;
+}
 
 /* For larger screens, ensure all cards fill the space equally */
 @media (min-width: 768px) {
