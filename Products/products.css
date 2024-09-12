@@ -298,14 +298,26 @@ body {
     width: 100%; 
 }
 
-
-  @media (max-width: 768px) {
-    .card {
-      margin: 0 auto;
-      flex: 1 1 100%;
-    }
-
-    .card-row {
+.col {
+    padding-bottom: 26px; 
     margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+        margin: 0 auto;
     }
-  }
+
+    .col {
+        flex: 1 1 100%;
+        max-width: 75%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
