@@ -284,12 +284,11 @@ body {
     .card-row {
         flex-direction: column;
         margin: 0 auto;
+        max-width: 75%;
     }
 
     .col {
-        flex: 1 1 100%;
-        max-width: 65%;
-        margin: 0 auto;
+        flex: 1 1 80%;
         margin-bottom: 40px;
         padding-bottom: 40px;
     }
