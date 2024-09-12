@@ -301,13 +301,11 @@ body {
 
   @media (max-width: 768px) {
     .card {
-      width: 70%; 
       margin: 0 auto;
-      
+      flex: 1 1 100%;
     }
 
     .card-row {
     margin-bottom: 20px;
-    flex: 1 1 80%;
     }
   }
