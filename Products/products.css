@@ -298,14 +298,18 @@ body {
     width: 100%; 
 }
 
-  /* General card styling */
   .card {
-    padding-bottom: 20px; /* Default padding for all screens */
+    padding-bottom: 20px;
   }
 
-  /* Media query for mobile devices */
+
   @media (max-width: 768px) {
     .card {
-      padding-bottom: 30px; /* Extra padding for mobile devices */
+      padding-bottom: 30px;
+      width: 80%; 
+    }
+
+    .card-row {
+        margin-bottom: 30px;
     }
   }
