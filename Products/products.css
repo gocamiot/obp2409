@@ -312,7 +312,7 @@ body {
 
     .col {
         flex: 1 1 70%;
-        max-width: 800%;
+        max-width: 70%;
         margin-bottom: 30px;
         padding-bottom: 30px;
         margin: 0 auto;
