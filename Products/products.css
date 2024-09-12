@@ -298,18 +298,16 @@ body {
     width: 100%; 
 }
 
-  .card {
-    padding-bottom: 20px;
-  }
-
 
   @media (max-width: 768px) {
     .card {
-      padding-bottom: 30px;
-      width: 80%; 
+    
+      width: 70%; 
+      margin: 0 auto;
     }
 
     .card-row {
-        margin-bottom: 30px;
+    margin-bottom: 20px;
+
     }
   }
