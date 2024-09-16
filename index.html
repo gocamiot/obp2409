@@ -133,7 +133,9 @@
                     <li>  <a class="dropdown-item underline-hover" style="background-color: #3b6d85; color: white;" href="#" id="annualReportsLink">➼ Annual Reports</a></li>
                 </ul>
             </li>
-            <li class="nav-item text-hover"><a href="http://eprocurement.vaccines.co.za" class="nav-link" style="color: black;">CAREERS</a></li>
+            <li class="nav-item text-hover">
+                <a href="#" class="nav-link" style="color: black;" data-bs-toggle="modal" data-bs-target="#careersModal">CAREERS</a>
+            </li>
             <li class="nav-item text-hover"><a href="#Contact-US" class="nav-link" style="color: black;">CONTACTS</a></li>
 
         </ul>
@@ -145,7 +147,7 @@
 <div id="pdfModal" class="modal">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <h2>Download Annual Reports</h2>
+        <h2 class="headings">Download Annual Reports</h2>
         <ul class="pdf-list">
             <li><a href="/PDFS/OBP ANNUAL REPORT 2018 - 19.pdf" download>OBP Annual Report 2018-19</a></li>
             <li><a href="/PDFS/OBP ANNUAL REPORT 2020 -21.pdf" download>OBP Annual Report 2020-21</a></li>
@@ -154,6 +156,25 @@
         </ul>
     </div>
 </div>
+
+<!-- Careers Modal -->
+<div class="modal fade" id="careersModal" tabindex="-1" aria-labelledby="careersModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title headings" id="careersModalLabel">OBP Available Positions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Find our available positions on the following platforms:</p>
+          <div class="links-list">
+            <a href="https://www.linkedin.com/company/obpvaccines/jobs/" target="_blank">⫷ LinkedIn ⫸</a><br>
+            <a href="https://www.pnet.co.za/" target="_blank">⫷ PNet ⫸</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- social-media banner -->
@@ -498,7 +519,11 @@
                     Thank you for your consideration in partnering with us!</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <br>
-                    <button type="button" class="btn btn-lg px-4" style="color: #8fa63c;"><h4 class="head" style="color: #8fa63c;">GO TO TENDERS</h4></button>
+                    <a href="http://eprocurement.vaccines.co.za" target="_blank">
+                        <button type="button" class="btn btn-lg px-4" style="color: #8fa63c;">
+                            <h4 class="head" style="color: #8fa63c;">GO TO TENDERS</h4>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -618,6 +643,7 @@
       <div class="col-lg-6" style="border-left: 4px solid #8fa63c;">
         <h1 class="display-5 mb-3" style="color: #8fa63c; text-transform:uppercase;">Join the obp family</h1>
         <p class="lead">OBP Invites all prospective candidates to visit our careers page where you'll find a listing of roles we're currently interested in filling. Apply through the Careers portal, and we'll arrange an exploration call if we identify your application as a potential fit for OBP.</p>
+        <p>Find our career listings on... <a href="#" class="nav-link" style="color: #3b6d85;" data-bs-toggle="modal" data-bs-target="#careersModal">Linkedin & Pnet</a></p>
         <p>We look forward to learning more about you!</p>
       </div>
     </div>

@@ -42,6 +42,19 @@ body {
   }
 
 
+  .links-list a {
+    text-decoration: none;
+    color: #3b6c85;
+    display: block;
+
+  }
+
+  .links-list a:hover {
+    text-decoration: underline;
+  }
+
+
+
 /* Social buttons banner */
 .socials {
     margin: 0 auto;
