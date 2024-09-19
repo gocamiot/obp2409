@@ -599,6 +599,39 @@ margin: 0 auto;
 }
 
 
+.fraud-container {
+    background-color: #3b6c85; 
+    color: white; 
+    padding: 40px 0;
+    width: 100%; 
+  }
+  
+  .fraud-content {
+    max-width: 900px;
+    margin: 0 auto; 
+  }
+  
+  .fraud-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .fraud-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .fraud-text a {
+    color: #8fa63c;
+    text-decoration: none;
+  }
+  
+  .fraud-text a:hover {
+    text-decoration: underline;
+  }
+  
+
+
 
 /* contact section */
 .section {
