@@ -6,7 +6,7 @@
         <title>OBP~vaccines</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/obp2409/Products/products.css">
+        <link rel="stylesheet" href="/Products/products.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -772,87 +772,85 @@ PRESENTATION: Available in bottles of 5 ml.
 
 
 <div id="feedback-section" class="feedback-background">
-<!-- Enquiries Section -->
-<div class="feedback-background">
-    <div class="feedback-card">
-        <h2>ENQUIRIES</h2>
-        <p class="text-white">Please enter your info for the cattle products enquiry.</p>
-        <form id="enquiry-form" action="mailto:info@obpvaccines.co.za" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="product-select">Product Name</label>
-                <select id="product-select" name="product" required onchange="updateProductCode()">
-                    <option value="" disabled selected>Select a product</option>
-                    <option value="product-a-1" data-code="1241">ACTINOMYCES</option>
-                    <option value="product-a-2" data-code="1241">ANAPLASMOSIS (FROZEN)</option>
-                    <option value="product-a-3" data-code="1015">ANTHRAX SPORE</option>
-                    <option value="product-b-1" data-code="1046">BOTULISM</option>
-                    <option value="product-b-2" data-code="1056">BOTULISM /BLACK QUARTER (COMBINED)</option>
-                    <option value="product-b-3" data-code="1021">BLACK QUARTER</option>
-                    <option value="product-b-4" data-code="2203">B-PHEMERAL</option>
-                    <option value="product-b-5" data-code="1073">BRUCELLA S19</option>
-                    <option value="product-c-1" data-code="1093">CALF PARATYPHOID</option>
-                    <option value="product-c-2" data-code="1106">CALF PARATYPHOID (INACT..)</option>
-                    <option value="product-c-3" data-code="1282">CAMPYLOBACTER</option>
-                    <option value="product-c-4" data-code="2192">CHLAMYSURE</option>
-                    <option value="product-c-5" data-code="1256">CLOSTRIDIUM SEPTICUM</option>
-                    <option value="product-e-1" data-code="G 0010">ELEPHANT SKIN DISEASE</option>
-                    <option value="product-e-2" data-code="1132">ESCHERICHIA COLI</option>
-                    <option value="product-g-1" data-code="1154">GAS GANGRENE COMPLEX</option>
-                    <option value="product-h-1" data-code="3024">HEARTWATER (FROZEN)</option>
-                    <option value="product-l-1" data-code="2086">LEUKOPAST 3</option>
-                    <option value="product-l-2" data-code="2223">LUMPY SKIN DISEASE</option>
-                    <option value="product-l-3" data-code="1176">LEUKOPAST</option>
-                    <option value="product-p-1" data-code="1196">PASTURELLA</option>
-                    <option value="product-r-1" data-code="3034">REDWATER AFRICAN (FROZEN)</option>
-                    <option value="product-r-2" data-code="3044">REDWATER ASIATIC (FROZEN)</option>
-                    <option value="product-r-4" data-code="2153">RIFT VALLEY FEVER-(LIVE)</option>
-                    <option value="product-r-5" data-code="2146">RIFT VALLEY FEVER</option>
-                    <option value="product-s-1" data-code="1266">SWELLED HEAD</option>
-                    <option value="product-t-1" data-code="1276">TETANUS</option>
-                </select>
-                
-            </div>
+    <!-- Enquiries Section -->
+    <div class="feedback-background">
+        <div class="feedback-card">
+            <h2>ENQUIRIES</h2>
+            <p class="text-white">Please enter your info for the cattle products enquiry.</p>
+            <form id="enquiry-form">
+                <div class="form-group">
+                    <label for="product-select">Product Name</label>
+                    <div>
+                        <select id="product-select" name="product" required onchange="updateProductCode()">
+                            <option value="" disabled selected>Select a product</option>
+                            <option value="ACTINOMYCES" data-code="1241">ACTINOMYCES</option>
+                            <option value="ANAPLASMOSIS" data-code="1241">ANAPLASMOSIS (FROZEN)</option>
+                            <option value="ANTHRAX SPORE" data-code="1015">ANTHRAX SPORE</option>
+                            <option value="BOTULISM" data-code="1046">BOTULISM</option>
+                            <option value="BOTULISM-BQ" data-code="1056">BOTULISM /BLACK QUARTER (COMBINED)</option>
+                            <option value="BLACK QUARTER" data-code="1021">BLACK QUARTER</option>
+                            <option value="B-PHEMERAL" data-code="2203">B-PHEMERAL</option>
+                            <option value="BRUCELLA S19" data-code="1073">BRUCELLA S19</option>
+                            <option value="CALF PARATYPHOID" data-code="1093">CALF PARATYPHOID</option>
+                            <option value="CALF PARATYPHOID INACT" data-code="1106">CALF PARATYPHOID (INACT..)</option>
+                            <option value="CAMPYLOBACTER" data-code="1282">CAMPYLOBACTER</option>
+                            <option value="CHLAMYSURE" data-code="2192">CHLAMYSURE</option>
+                            <option value="CLOSTRIDIUM SEPTICUM" data-code="1256">CLOSTRIDIUM SEPTICUM</option>
+                            <option value="ELEPHANT SKIN DISEASE" data-code="G 0010">ELEPHANT SKIN DISEASE</option>
+                            <option value="ESCHERICHIA COLI" data-code="1132">ESCHERICHIA COLI</option>
+                            <option value="GAS GANGRENE COMPLEX" data-code="1154">GAS GANGRENE COMPLEX</option>
+                            <option value="HEARTWATER FROZEN" data-code="3024">HEARTWATER (FROZEN)</option>
+                            <option value="LEUKOPAST 3" data-code="2086">LEUKOPAST 3</option>
+                            <option value="LUMPY SKIN DISEASE" data-code="2223">LUMPY SKIN DISEASE</option>
+                            <option value="LEUKOPAST" data-code="1176">LEUKOPAST</option>
+                            <option value="PASTURELLA" data-code="1196">PASTURELLA</option>
+                            <option value="REDWATER AFRICAN" data-code="3034">REDWATER AFRICAN (FROZEN)</option>
+                            <option value="REDWATER ASIATIC" data-code="3044">REDWATER ASIATIC (FROZEN)</option>
+                            <option value="RIFT VALLEY FEVER-LIVE" data-code="2153">RIFT VALLEY FEVER-(LIVE)</option>
+                            <option value="RIFT VALLEY FEVER" data-code="2146">RIFT VALLEY FEVER</option>
+                            <option value="SWELLED HEAD" data-code="1266">SWELLED HEAD</option>
+                            <option value="TETANUS" data-code="1276">TETANUS</option>
+                        </select>
+                        <input type="text" id="product-code" name="product-code" placeholder="Product code:" style="margin-top: 20px; text-align: start; border-left: 2px solid #8fa63c; border-bottom: none;" readonly>
+                    </div>
+                </div>
 
-            <div class="form-group">
-                <label for="product-code"></label>
-                <input type="read" id="product-code" name="product-code" readonly placeholder="Product Code:">
-            </div>
+                <div class="form-group">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="first-name"></label>
-                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-            </div>
+                <div class="form-group">
+                    <label for="last-name"></label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="last-name"></label>
-                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-            </div>
+                <div class="form-group">
+                    <label for="phone-number"></label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number (Optional)">
+                </div>
 
-            <div class="form-group">
-                <label for="phone-number"></label>
-                <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number (Optional)">
-            </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
 
-            <div class="form-group">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
+                <div class="form-group">
+                    <label for="comment"></label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Your comment here..." required></textarea>
+                </div>
 
-            <div class="form-group">
-                <label for="comment"></label>
-                <textarea id="comment" name="comment" rows="4" placeholder="Your comment here..." required></textarea>
+                <button type="button" id="send-product" class="btn-send">Send</button>
+            </form>
+            <br>
+            <div class="footer-text">
+                Powered by OBP-vaccines
             </div>
-
-            <button type="submit" class="btn-send">Send</button>
-        </form>
-        <br>
-        <div class="footer-text">
-            Powered by OBP-vaccines
         </div>
     </div>
+    <br>
 </div>
-<br>
-</div>
+
 
 
 
@@ -884,8 +882,67 @@ PRESENTATION: Available in bottles of 5 ml.
     const productCode = selectedOption.getAttribute('data-code');
     
     // Update the input field with the product name and code
-    codeField.value = productCode ? `Product Code: (${productCode})` : 'Product Code: No Product Code';
+    codeField.value = productCode ? `${productCode}` : 'Product Code: No Product Code';
   }
+
+
+  // form js
+ document.getElementById('send-product').addEventListener('click', function () {
+
+const productName = document.getElementById('product-select').value;
+const productCode = document.getElementById('product-code').value;
+const firstName = document.getElementById('first-name').value;
+const lastName = document.getElementById('last-name').value;
+const phoneNumber = document.getElementById('phone-number').value;
+const email = document.getElementById('email').value;
+const message = document.getElementById('comment').value;
+
+const data = JSON.stringify({
+    product: productName,
+    product_code: productCode,
+    first_name: firstName,
+    last_name: lastName,
+    phone_number: phoneNumber,
+    email: email,
+    message: message
+});
+
+fetch('http://grc.iccs.co.za:9000/send-product-email/', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: data
+})
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            console.log("Email sent successfully!");
+        } else {
+            console.log(data.error);
+        }
+    })
+    .catch(error => {
+        console.log(error.message);
+    });
+});
+
+
+// sent message
+document.getElementById('send-product').addEventListener('click', function() {
+    let button = this;
+
+    setTimeout(function() {
+        button.textContent = 'Mail was sent!';  
+
+        setTimeout(function() {
+            button.textContent = 'Send';
+
+            let form = document.getElementById('enquiry-form');
+            form.reset();
+        }, 3000);
+    }, 3000); 
+});
 </script>
 
      

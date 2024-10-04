@@ -726,7 +726,7 @@
             <!-- Right Section (Enquiries) -->
             <div class="col-lg-4 col-md-12 section section-right">
                 <h3 class="text-center">ENQUIRIES</h3>
-                <form id="enquiry-form"  method="post" >
+                <form id="enquiry-form" >
                     <p>Contact info</p>
                     <p>Please leave your contact info and we will contact you back</p>
                     <div class="form-group">
@@ -748,7 +748,11 @@
                         <label for="email"></label>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-                    <button type="submit" id="send-enquiry" class="btn btn-primary w-100">Send</button>
+                    <div class="form-group">
+                        <label for="comment"></label>
+                        <input type="text" id="comment" name="comment" placeholder="your comment" required>
+                    </div>
+                    <button type="button" id="send-enquiry" class="btn btn-primary w-100">Send</button>
                 </form>
             </div>
         </div>
@@ -814,45 +818,59 @@ window.onclick = function(event) {
 
 
 // form js
-document.getElementById('send-enquiry').addEventListener('click', function(e) {
-        e.preventDefault();
-    
+document.getElementById('send-enquiry').addEventListener('click', function () {
+        // e.preventDefault();
+        console.log  ("================")
+
         const firstName = document.getElementById('first-name').value;
         const lastName = document.getElementById('last-name').value;
         const phoneNumber = document.getElementById('phone-number').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('comment').value;
-    
-        if (!email || !message) {
-            document.getElementById('response-message').innerText = 'Email and message are required!';
-            return;
-        }
-    
+
         const data = JSON.stringify({
+            first_name: firstName,
+            last_name: lastName,
+            phone_number: phoneNumber,
             email: email,
-            subject: 'Enquiry from ' + firstName + ' ' + lastName,
             message: message
         });
-    
-        fetch('http://grc.iccs.co.za:9000/send-email/', {
+
+        fetch('http://grc.iccs.co.za:9000/send-enquiries-email/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: data
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                document.getElementById('response-message').innerText = 'Email sent successfully!';
-            } else {
-                document.getElementById('response-message').innerText = 'Error: ' + (data.error || 'Unknown error');
-            }
-        })
-        .catch(error => {
-            document.getElementById('response-message').innerText = 'Error: ' + error.message;
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log("Email sent successfully!");
+                } else {
+                    console.log(data.error);
+                }
+            })
+            .catch(error => {
+                console.log(error.message);
+            });
     });
+
+
+    document.getElementById('send-enquiry').addEventListener('click', function() {
+    let button = this;
+
+    setTimeout(function() {
+        button.textContent = 'Mail was sent!';  
+
+        setTimeout(function() {
+            button.textContent = 'Send';
+
+            let form = document.getElementById('enquiry-form');
+            form.reset();
+        }, 3000);
+    }, 3000); 
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

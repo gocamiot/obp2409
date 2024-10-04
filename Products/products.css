@@ -322,3 +322,33 @@ body {
         margin-bottom: 20px;
     }
 }
+
+
+/* Style for the container */
+.feedback-card {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#product-select {
+    width: 100%; /* Full width on mobile */
+    padding: 10px;
+    font-size: 16px; /* Increase font size for mobile readability */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    #product-select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #product-select {
+        font-size: 12px; /* Smaller font size on smaller devices */
+        padding: 6px;
+    }
+}
