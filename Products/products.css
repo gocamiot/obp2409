@@ -332,9 +332,9 @@ body {
 }
 
 #product-select {
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
     padding: 10px;
-    font-size: 16px; /* Increase font size for mobile readability */
+    font-size: 16px; 
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -348,7 +348,7 @@ body {
 
 @media (max-width: 480px) {
     #product-select {
-        font-size: 12px; /* Smaller font size on smaller devices */
+        font-size: 12px; 
         padding: 6px;
     }
 }
