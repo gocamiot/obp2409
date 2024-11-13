@@ -1,7 +1,21 @@
 body {
     background-color: rgb(245, 237, 237) !important;
-    font-family: 'NATO Sans', sans-serif !important;
+    font-family: 'Aptos', sans-serif !important;
 }
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('/path/to/aptos-font.woff2') format('woff2'),
+         url('/path/to/aptos-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+
+html, body {
+    overflow-x: hidden;
+  }
 
 .container1 {
     margin: 0 auto;
