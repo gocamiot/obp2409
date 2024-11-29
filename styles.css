@@ -47,13 +47,6 @@ html, body {
     color: yellow;
     font-weight: bold;
   }
-/* Media query for smaller screens */
-@media (max-width: 1024px) { /* Adjusts for laptops and smaller */
-    .pdf-link {
-      display: block;
-      margin: 20px auto 0; /* Center it at the bottom */
-    }
-  }
 
 
   .centered-text {
