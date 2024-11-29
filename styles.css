@@ -47,6 +47,14 @@ html, body {
     color: yellow;
     font-weight: bold;
   }
+      /* Media query for smaller screens */
+      @media (max-width: 768px) {
+        .pdf-link {
+          position: static;
+          margin-top: 20px;
+        }
+      }
+      
 
 
   .centered-text {
