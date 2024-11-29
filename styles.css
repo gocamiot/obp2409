@@ -29,9 +29,6 @@ html, body {
     font-weight: bold;
   }
   .pdf-link {
-    position: absolute;
-    top: 13%;
-    right: 20px;
     transform: translateY(-50%);
     text-decoration: none;
   }
