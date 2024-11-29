@@ -13,14 +13,6 @@ html, body {
     padding: 20px;
     border: 5px solid yellow;
     position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; 
-  }
-  .banner-content {
-    flex: 1 1 auto; 
-    max-width: 600px;
   }
   .banner h1 {
     font-size: 2rem;
@@ -38,7 +30,7 @@ html, body {
   }
   .pdf-link {
     position: absolute;
-    top: 50%;
+    top: 13%;
     right: 20px;
     transform: translateY(-50%);
     text-decoration: none;
@@ -56,15 +48,10 @@ html, body {
     font-weight: bold;
   }
 /* Media query for smaller screens */
-@media (max-width: 1024px) {
-    .banner {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .banner img {
-      position: static; 
-      margin: 0 auto; 
+@media (max-width: 1024px) { /* Adjusts for laptops and smaller */
+    .pdf-link {
+      display: block;
+      margin: 20px auto 0; /* Center it at the bottom */
     }
   }
 
