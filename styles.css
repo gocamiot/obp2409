@@ -13,6 +13,10 @@ html, body {
     padding: 20px;
     border: 5px solid yellow;
     position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
   }
   .banner h1 {
     font-size: 2rem;
