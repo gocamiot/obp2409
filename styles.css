@@ -18,6 +18,10 @@ html, body {
     align-items: center;
     gap: 20px; 
   }
+  .banner-content {
+    flex: 1 1 auto; 
+    max-width: 600px;
+  }
   .banner h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -51,14 +55,18 @@ html, body {
     color: yellow;
     font-weight: bold;
   }
-      /* Media query for smaller screens */
-      @media (max-width: 768px) {
-        .pdf-link {
-          position: static;
-          margin-top: 20px;
-        }
-      }
-      
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+    .banner {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner img {
+      position: static; 
+      margin: 0 auto; 
+    }
+  }
 
 
   .centered-text {
